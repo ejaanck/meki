@@ -38,7 +38,7 @@ async def gcast(event):
     if xx := event.pattern_match.group(1):
         msg = xx
     elif event.is_reply:
-        msg = await event.get_reply_message()
+        msg = await event.get_reply_message("Kasi Bacotan Lu Bego")
     else:
         return await eor(
             event.eor("**`Hai Kontol😘..`")
