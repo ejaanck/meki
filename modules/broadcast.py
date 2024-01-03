@@ -41,9 +41,9 @@ async def gcast(event):
         msg = await event.get_reply_message()
     else:
         return await eor(
-            event.eor("**`Kiw Jomblo..`")
+            event.eor("**`Hai Kontol😘..`")
         )
-    kk = await event.eor("`SABAR LAGI CARI JODOH BUAT LU`")
+    kk = await event.eor("`🚀SABAR LAGI NGIRIM PAKET KE SURGA🤩`")
     er = 0
     done = 0
     err = ""
@@ -70,7 +70,7 @@ async def gcast(event):
                 except BaseException as h:
                     err += f"• {str(h)}" + "\n"
                     er += 1
-    await kk.edit(f"** Victory {done} 🗿, Defeat {er} Asuw.**")
+    await kk.edit(f"**✅Nah Crot Didalam {done} Memek, ❎Yah Jadi {er} Anak.**")
 
 
 @ayra_cmd(pattern="[gG][u][c][a][s][t]( (.*)|$)", fullsudo=False)
