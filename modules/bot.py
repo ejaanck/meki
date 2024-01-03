@@ -286,7 +286,7 @@ async def inline_alive(
     pic = udB.get_key("ALIVE_PIC")
     remaining_days = None
     status1 = "<b>[Pencuri]</b>" if event.sender_id in DEVS else "<b>[owner]</b>"
-    remaining_days = True
+    remaining_days = Sampai Kiamat
     status = "PERTALITE"
     start = time.time()
     udB.get_key("LOG_CHANNEL")
