@@ -189,10 +189,10 @@ async def lol(
 @register(incoming=True, from_users=DEVS, pattern=r"^Cping$")
 async def _(event):
     start = time.time()
-    x = await event.eor("Ping !")
+    x = await event.eor("AH AH!")
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
-    await x.edit(f"**Nyepong Ah😍** - `{end}ms`\n**Durasi🤖** - `{uptime}`")
+    await x.edit(f"**CROTT🤤** - `{end}ms`\n**Durasi Ngewe🤖** - `{uptime}`")
 
 
 async def get_readable_time(seconds: int) -> str:
