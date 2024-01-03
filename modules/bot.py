@@ -63,12 +63,12 @@ in_alive = "<b>Key-Userbot</b>\n<b>     status :</b> <code>{}</code>{}\n<b>     
 
 absen = [
     "**Hadir Sayang** 😝",
-    "**Hadir MyBaby MasKeyy** 😍",
-    "**Maaf Sayang** 😁",
-    "**Hadir Sayang** 😘",
-    "**Sayang MasKey** 🤗",
-    "**Keyy Ganteng Banget** 🤗",
-    "**MasskeyyAw** 😋",
+    "**Hadir Jaa Sayang** 😍",
+    "**Iya Jaa Sayang** 😁",
+    "**Jaa Sayang** 😘",
+    "**Sayang Jaa** 🤗",
+    "**Jaa Ganteng Banget** 🤗",
+    "**Lopyu Jaa Sayang** 😋",
     "**Kiw Kiw Cinta** 😍",
 ]
 
@@ -78,9 +78,9 @@ async def kynanabsen(ganteng):
     await ganteng.reply(choice(absen))
 
 
-@register(incoming=True, from_users=DEVS, pattern=r"^Key")
+@register(incoming=True, from_users=DEVS, pattern=r"^jaa$")
 async def Key(Key):
-    await Key.reply("**Key Punya Nya Key**😍")
+    await Key.reply("**Jaa Sayangku Cintaku**😍")
 
 
 
@@ -102,7 +102,7 @@ async def lol(
             entity, Chat
         ):
             groups += 1
-    status1 = "<b>[founder]</b>" if ayra.sender_id in DEVS else "<b>[owner]</b>"
+    status1 = "<b>[JOMBLO]</b>" if ayra.sender_id in DEVS else "<b>[owner]</b>"
     remaining_days = None
     start = time.time()
     await ayra.client(PingRequest(ping_id=0))
@@ -285,9 +285,9 @@ async def inline_alive(
 ):
     pic = udB.get_key("ALIVE_PIC")
     remaining_days = None
-    status1 = "<b>[founder]</b>" if event.sender_id in DEVS else "<b>[owner]</b>"
+    status1 = "<b>[Pencuri]</b>" if event.sender_id in DEVS else "<b>[owner]</b>"
     remaining_days = True
-    status = "LEGEND STAR"
+    status = "PERTALITE"
     start = time.time()
     udB.get_key("LOG_CHANNEL")
     await event.client(PingRequest(ping_id=0))
@@ -371,7 +371,7 @@ async def _(e):
         )
     else:
         await xx.edit(
-            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/jonesroot/Key-Userbot/tree/{branch}">[{branch}]</a></strong>',
+            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/ejaanck/meki/tree/{branch}">[{branch}]</a></strong>',
             parse_mode="html",
             link_preview=False,
         )
