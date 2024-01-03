@@ -284,7 +284,7 @@ async def inline_alive(
     event: NewMessage.Event,
 ):
     pic = udB.get_key("ALIVE_PIC")
-    remaining_days = none
+    remaining_days = None
     status1 = "<b>[Pencuri]</b>" if event.sender_id in DEVS else "<b>[owner]</b>"
     remaining_days = True
     status = "PERTALITE"
