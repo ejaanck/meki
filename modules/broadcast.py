@@ -38,10 +38,10 @@ async def gcast(event):
     if xx := event.pattern_match.group(1):
         msg = xx
     elif event.is_reply:
-        msg = await event.get_reply_message("Kasi Bacotan Lu Bego")
+        msg = await event.get_reply_message()
     else:
         return await eor(
-            event.eor("**`Hai Kontol😘..`")
+            event.eor("**`Kasi Bacotan Lu Bego..`")
         )
     kk = await event.eor("`🚀SABAR LAGI NGIRIM PAKET KE SURGA🤩`")
     er = 0
@@ -131,7 +131,7 @@ async def gblacker(event, type_):
     chat_id = int(args[1]) if len(args) == 2 else event.chat_id
     if type_ == "add":
         add_gblacklist(chat_id)
-        await event.eor(f"**Menyimpan Pacar Kedalam BL-GCAST**\n`{chat_id}`")
+        await event.eor(f"**Masuk Kedalam BL Memek**\n`{chat_id}`")
     elif type_ == "remove":
         rem_gblacklist(chat_id)
         await event.eor(f"**Terbang dari BL-GCAST**\n`{chat_id}`")
