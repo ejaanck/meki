@@ -5,7 +5,7 @@ COPY installer.sh .
 RUN bash installer.sh
 
 # changing workdir
-WORKDIR "/root/jonesroot"
+WORKDIR "/root/ejaanck"
 
 # start the bot.
 CMD ["bash", "start"]
