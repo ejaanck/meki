@@ -19,7 +19,7 @@ import requests
 from . import *
 
 
-@ayra_cmd(pattern="shibe$")
+@ayra_cmd(pattern="dog$")
 async def shibe(event):
     xx = await event.eor("`Processing...`")
     response = requests.get("https://shibe.online/api/shibes").json()
