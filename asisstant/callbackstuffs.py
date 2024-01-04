@@ -1,9 +1,9 @@
-# Ayra - UserBot
-# Copyright (C) 2021-2022 senpai80
+# Ultroid - UserBot
+# Copyright (C) 2021-2023 TeamUltroid
 #
-# This file is a part of < https://github.com/senpai80/Ayra/ >
+# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
 # PLease read the GNU Affero General Public License in
-# <https://www.github.com/senpai80/Ayra/blob/main/LICENSE/>.
+# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
 
 import asyncio
@@ -202,7 +202,6 @@ heroku_api, app_name = Var.HEROKU_API, Var.HEROKU_APP_NAME
 async def update(eve):
     repo = Repo()
     ac_br = repo.active_branch
-    ups_rem = repo.remote("upstream")
     if heroku_api:
         import heroku3
 
@@ -221,7 +220,6 @@ async def update(eve):
             repo.__del__()
             return
         await eve.edit(get_string("clst_1"))
-        ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
         heroku_git_url = heroku_app.git_url.replace(
             "https://", f"https://api:{heroku_api}@"
@@ -241,7 +239,6 @@ async def update(eve):
         await eve.edit("`Berhasil Diperbarui!\nMemulai ulang, harap tunggu...`")
     else:
         await eve.edit(get_string("clst_1"))
-        # call_back()
         await bash("git pull && pip3 install -r requirements.txt")
         execl(sys.executable, sys.executable, "-m", "Ayra")
 
@@ -270,7 +267,7 @@ async def changes(okk):
                 language="md",
             )
             return await okk.edit(
-                f"**• Key Userbot •**{cli}",
+                f"**• Naya Userbot •**{cli}",
                 file=thumb,
                 buttons=button,
                 force_document=True,
@@ -808,4 +805,4 @@ async def chon(event):
     await event.edit(
         "Berhasil Dimatikan! Sekarang Anda Tidak Dapat Mengobrol Dengan Orang Melalui Bot Ini",
         buttons=[Button.inline("Kembali", data="cbs_chatbot")],
-    )
+)
