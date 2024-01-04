@@ -95,7 +95,7 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                         description="© Fake",
                         text=MSG,
                         thumb=InputWebDocument(
-                            "https://graph.org/file/02f9ca4617cec58377b9d.jpg",
+                            "https://graph.org/file/715859b15b02320e04635.jpg",
                             0,
                             "image/jpeg",
                             [],
