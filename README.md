@@ -51,9 +51,9 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 <summary><b>🔗 Deploy di VPS</b></summary>
 <br>
 
- • `git clone https://github.com/jonesroot/Key-Userbot`
+ • `git clone https://github.com/ejaanck/meki`
 
- • `cd Key-Userbot`
+ • `cd meki`
 
  • `bash installer.sh`
 
@@ -117,4 +117,4 @@ Fake-Ubot is licensed under [GNU Affero General Public License](https://www.gnu.
 * [MarshalX](https://github.com/MarshalX) for [PyTgCalls.](https://github.com/MarshalX/tgcalls)
 
 > Recode By
-* [![Rizky Ananda M.](https://img.shields.io/static/v1?label=Rizky-Ananda&message=M&color=critical)](https://t.me/rizzvbss)
+* [![Fake User J.](https://img.shields.io/static/v1?label=Fake-User-J&message=M&color=critical)](https://t.me/stayheresay)
