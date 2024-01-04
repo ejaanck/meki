@@ -30,11 +30,11 @@ except ImportError:
 
 from telethon.utils import resolve_bot_file_id
 
-piic = "https://telegra.ph//file/8675e75ef634fce0b8102.jpg"
+piic = "https://graph.org/file/715859b15b02320e04635.jpg"
 
 buttons = [
     [
-        Button.url(get_string("bot_4"), "t.me/kynansupport"),
+        Button.url(get_string("bot_4"), "t.me/stayheresay"),
     ]
 ]
 
@@ -52,14 +52,14 @@ BLACK = [1898065191, 1054295664, 1889573907, 2133148961, 2076745088]
 
 # Will move to strings
 alive_txt = """
-◈ Asisstaint Key x Robot​
+◈ Asisstaint Fake-Ubot
 
   ◈ Version - {}
   ◈ Ayra - {}
   ◈ Telethon - {}
 """
 
-in_alive = "<b>Key-Userbot</b>\n<b>     status :</b> <code>{}</code>{}\n<b>       expired_on :</b> <code>{}</code>\n<b>       dc_id :</b> <code>{}</code>\n<b>       ping_dc :</b> <code>{} ms</code>\n<b>       version :</b> <code>{}</code>\n<b>       assistant :</b> <code>{}</code>\n<b>       uptime :</b> <code>{}</code>"
+in_alive = "<b>Fake-Ubot</b>\n<b>     status :</b> <code>{}</code>{}\n<b>       expired_on :</b> <code>{}</code>\n<b>       dc_id :</b> <code>{}</code>\n<b>       ping_dc :</b> <code>{} ms</code>\n<b>       version :</b> <code>{}</code>\n<b>       assistant :</b> <code>{}</code>\n<b>       uptime :</b> <code>{}</code>"
 
 absen = [
     "**Hadir Paduka Jaa** 🤩",
@@ -191,7 +191,7 @@ async def lol(
 
 
 @ayra_cmd(pattern="ping$", chats=[], type=["official", "assistant"])
-@register(incoming=True, from_users=DEVS, pattern=r"^Cping$")
+@register(incoming=True, from_users=DEVS, pattern=r"^cping$")
 async def _(event):
     start = time.time()
     x = await event.eor("AH AH Enak Sayang")
@@ -290,7 +290,7 @@ async def inline_alive(
 ):
     pic = udB.get_key("ALIVE_PIC")
     remaining_days = None
-    status1 = "<b>[Pencuri]</b>" if event.sender_id in DEVS else "<b>[owner]</b>"
+    status1 = "<b>[Fake Boss]</b>" if event.sender_id in DEVS else "<b>[Babu]</b>"
     remaining_days = True
     status = "PERTALITE"
     start = time.time()
