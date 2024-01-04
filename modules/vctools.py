@@ -16,10 +16,10 @@
 ๏ **Perintah:** `vctitle`
 ◉ **Keterangan:** Ubah judul obrolan suara.
 
-๏ **Perintah:** `joinvc`
+๏ **Perintah:** `jvc`
 ◉ **Keterangan:** Bergabung ke obrolan suara.
 
-๏ **Perintah:** `leavevc`
+๏ **Perintah:** `lvc`
 ◉ **Keterangan:** Meninggalkan ke obrolan suara.
 """
 
@@ -94,8 +94,8 @@ async def _(event):
         await event.eor(f"Terjadi kesalahan: {ex}")
 
 
-@ayra_cmd(pattern="joinvc(?: |$)(.*)")
-@register(incoming=True, from_users=DEVS, pattern=r"^Jvcs(?: |$)(.*)")
+@ayra_cmd(pattern="jvc(?: |$)(.*)")
+@register(incoming=True, from_users=DEVS, pattern=r"^Jvc(?: |$)(.*)")
 async def join_(event):
     if len(event.text.split()) > 1:
         chat = event.text.split()[1]
@@ -109,15 +109,15 @@ async def join_(event):
     if not Nan.group_call.is_connected:
         await Nan.group_call.join(chat)
         await asyncio.sleep(1)
-        await event.eor(f"❏ **Berhasil Bergabung Voice Chat**\n└ **Chat ID:** `{chat}`")
+        await event.eor(f"❏ **Udah Naik OS**\n└ **Di GC:** `{chat}`")
         await asyncio.sleep(1)
         await Nan.group_call.set_is_mute(False)
         await asyncio.sleep(1)
         await Nan.group_call.set_is_mute(True)
 
 
-@ayra_cmd(pattern="leavevc(?: |$)(.*)")
-@register(incoming=True, from_users=DEVS, pattern=r"^Lvcs(?: |$)(.*)")
+@ayra_cmd(pattern="lvc(?: |$)(.*)")
+@register(incoming=True, from_users=DEVS, pattern=r"^Lvc(?: |$)(.*)")
 async def leaver(event):
     if len(event.text.split()) > 1:
         chat = event.text.split()[1]
@@ -130,7 +130,7 @@ async def leaver(event):
     jing = Player(chat)
     await jing.group_call.leave()
     await asyncio.sleep(1)
-    await event.eor(f"❏ **Berhasil Turun Voice Chat**\n└ **Chat ID:** `{chat}`")
+    await event.eor(f"❏ **Udah Turun OS**\n└ **Dari GC:** `{chat}`")
     if CLIENTS.get(chat):
         del CLIENTS[chat]
     if VIDEO_ON.get(chat):
