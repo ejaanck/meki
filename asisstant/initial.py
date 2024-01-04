@@ -10,12 +10,12 @@ import re
 from . import *
 
 STRINGS = {
-    1: """ **Terima Kasih Telah Deploy Key-Userbot!**
+    1: """ **Terima Kasih Telah Deploy Fake-Ubot!**
 
 Beberapa Bantuan Untuk Kamu Pelajari.""",
-    2: """🎉** Tentang Key-Userbot**
+    2: """🎉** Tentang Fake Ubot**
 
- Key-Userbot adalah repo userbot yanh dibuat untuk kekasih saya, userbot ini memiliki beberapa fitur kamu bisa melihat nya dihalaman 4.""",
+ Fake-Ubot adalah repo userbot yang dibuat untuk saya, userbot ini memiliki beberapa fitur kamu bisa melihat nya dihalaman 4.""",
     3: """
 
 -> Kamu bisa memutar musik melalui userbot ini.
