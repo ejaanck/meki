@@ -39,7 +39,7 @@ async def _help(ayra):
                     for d in LIST[plug]:
                         x += HNDLR + d
                         x += "\n"
-                    x += "\n© @Pusingeaak"
+                    x += "\n© Fake Ubot"
                     await ayra.eor(x)
                 except BaseException:
                     file = None
@@ -70,7 +70,7 @@ async def _help(ayra):
                     if file in HELP["Official"]:
                         for i in HELP["Official"][file]:
                             output += i
-                    output += "\n© @Pusingeaak"
+                    output += "\n© Fake Ubot"
                     await ayra.eor(output)
         except BaseException as er:
             LOGS.exception(er)
