@@ -200,7 +200,7 @@ async def _(event):
     x = await event.eor("AH AH Enak Sayang")
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
-    await x.edit(f"**CROTT🤤** - `{end}ms`\n**Durasi Ngewe🤖** - `{uptime}`")
+    await x.edit(f"**CROTT🤤** - `{end}ms`\n**Durasi Ngewe💦** - `{uptime}`")
 
 
 async def get_readable_time(seconds: int) -> str:
