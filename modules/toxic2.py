@@ -127,6 +127,36 @@ async def _(event):
 # Create by myself @localheart
 
 
+@ayra_cmd(outgoing=True, pattern=r"^[mM][mM][kK](?: |$)(.*)")
+async def _(event):
+    await event.eor("**MEMEK**")
+    sleep(1.5)
+    await event.eor("**LU ANAK MEMEK**")
+    sleep(1.5)
+    await event.eor("**KELUAR DARI MEMEK**")
+    sleep(1.5)
+    await event.eor("**MUKALU PERSIS MEMEK**")
+    sleep(1.5)
+    await event.eor("**DASAR ANAK MEMEK**")
+    sleep(1.5)
+    await event.eor("**NOLEP MEMEK**")
+    sleep(1.5)
+    await event.eor("**NGERUSUH MEMEK**")
+    sleep(1.5)
+    await event.eor("**BENER BENER MEMEK**")
+    sleep(1.5)
+    await event.eor("**PADAHAL LO GAPUNYA MEMEK**")
+    sleep(1.5)
+    await event.eor("**MENDING LO OPERASI MEMEK**")
+    sleep(1.5)
+    await event.eor("**BIAR LO PUNYA MEMEK**")
+    sleep(1.5)
+    await event.eor("**KASIAN CACAD GAPUNYA MEMEK**")
+
+
+
+
+
 @ayra_cmd(outgoing=True, pattern=r"^[kK][nN][tT][lL](?: |$)(.*)")
 async def _(event):
     await event.eor("**KONTOLL**")
