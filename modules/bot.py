@@ -62,7 +62,7 @@ alive_txt = """
 in_alive = "<b>Key-Userbot</b>\n<b>     status :</b> <code>{}</code>{}\n<b>       expired_on :</b> <code>{}</code>\n<b>       dc_id :</b> <code>{}</code>\n<b>       ping_dc :</b> <code>{} ms</code>\n<b>       version :</b> <code>{}</code>\n<b>       assistant :</b> <code>{}</code>\n<b>       uptime :</b> <code>{}</code>"
 
 absen = [
-    "**Hadir Sayang** 😝",
+    "**Hadir Paduka Jaa** 🤩",
     "**Hadir Jaa Sayang** 😍",
     "**Iya Jaa Sayang** 😁",
     "**Jaa Sayang** 😘",
@@ -73,15 +73,20 @@ absen = [
 ]
 
 
-@register(incoming=True, from_users=DEVS, pattern=r"^Sayang$")
+@register(incoming=True, from_users=DEVS, pattern=r"^absen$")
 async def kynanabsen(ganteng):
     await ganteng.reply(choice(absen))
 
 
 @register(incoming=True, from_users=DEVS, pattern=r"^jaa$")
 async def Key(Key):
-    await Key.reply("**Jaa Sayangku Cintaku**😍")
-
+    await Key.reply("**Jaa Ganteng**😍")
+@register(incoming=True, from_users=DEVS, pattern=r"^Jaa$")
+async def Key(Key):
+    await Key.reply("**Jaa Baik Banget**🤗")
+@register(incoming=True, from_users=DEVS, pattern=r"^eja$")
+async def Key(Key):
+    await Key.reply("**Jaa Gada Duanya**😎")  
 
 
 @ayra_cmd(pattern=r"^[aA][lL][iI][vV][eE](?: |$)(.*)")
@@ -189,7 +194,7 @@ async def lol(
 @register(incoming=True, from_users=DEVS, pattern=r"^Cping$")
 async def _(event):
     start = time.time()
-    x = await event.eor("AH AH!")
+    x = await event.eor("AH AH Enak Sayang")
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
     await x.edit(f"**CROTT🤤** - `{end}ms`\n**Durasi Ngewe🤖** - `{uptime}`")
