@@ -87,6 +87,9 @@ async def Key(Key):
 @register(incoming=True, from_users=DEVS, pattern=r"^eja$")
 async def Key(Key):
     await Key.reply("**Jaa Gada Duanya**😎")  
+@register(incoming=True, from_users=DEVS, pattern=r"^caa$")
+async def Key(Key):
+    await Key.reply("**Caa Sayangnya Jaa**❤️")  
 
 
 @ayra_cmd(pattern=r"^[aA][lL][iI][vV][eE](?: |$)(.*)")
