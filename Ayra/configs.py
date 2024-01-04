@@ -42,7 +42,7 @@ class Var:
     )
     REDISPORT = config("REDISPORT", default=None)
     BOT_TOKEN = config("BOT_TOKEN", default=None)
-    LOG_CHANNEL = config("LOG_CHANNEL", default=None, cast=int)
+    LOG_CHANNEL = config("LOG_CHANNEL", default=123, cast=int)
     HEROKU_APP_NAME = config("HEROKU_APP_NAME", default=None)
     DB_NAME = config("DB_NAME", default="FakeDB")
     HEROKU_API = config("HEROKU_API", default=None)
