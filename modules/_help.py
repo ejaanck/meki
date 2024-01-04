@@ -31,7 +31,7 @@ async def _help(ayra):
                 output = f"**Plugin** - `{plug}`\n"
                 for i in HELP["Official"][plug]:
                     output += i
-                output += "\n© @Pusingeaak"
+                output += "\n© Fake Ubot"
                 await ayra.eor(output)
             else:
                 try:
