@@ -16,7 +16,7 @@ async def dueha(e):
     if not user.is_self:
         return
     sm = udB.get_key("ON_MNGR_ADD")
-    if sm == "ON":
+    if sm == "OFF":
         return
     if not sm:
         sm = "Terima kasih telah Menambahkan saya :)"
