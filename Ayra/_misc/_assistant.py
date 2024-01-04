@@ -90,9 +90,9 @@ def in_pattern(pattern=None, owner=False, **kwargs):
             if owner and event.sender_id not in owner_and_sudos():
                 res = [
                     await event.builder.article(
-                        title="ᴀʏʀᴀ ꭙ ᴜꜱᴇʀʙᴏᴛ​",
+                        title="Fake X Ubot",
                         url="https://t.me/stayheresay",
-                        description="© Fake",
+                        description="© Fake Ubot",
                         text=MSG,
                         thumb=InputWebDocument(
                             "https://graph.org/file/715859b15b02320e04635.jpg",
@@ -126,7 +126,7 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                                 title="Unhandled Exception has Occured!",
                                 text=error_text(),
                                 buttons=Button.url(
-                                    "Report", "https://t.me/keysupport1"
+                                    "Report", "https://t.me/jaahilang"
                                 ),
                             )
                         ]
