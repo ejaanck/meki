@@ -166,7 +166,7 @@ async def autobot():
     if who.username:
         username = who.username + "_bot"
     else:
-        username = "key_" + (str(who.id))[5:] + "_bot"
+        username = "fake_" + (str(who.id))[5:] + "_bot"
     bf = "@BotFather"
     await ayra_bot(UnblockRequest(bf))
     await ayra_bot.send_message(bf, "/cancel")
@@ -201,7 +201,7 @@ async def autobot():
     await ayra_bot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = "key_" + (str(who.id))[6:] + str(ran) + "_bot"
+        username = "fake_" + (str(who.id))[6:] + str(ran) + "_bot"
         await ayra_bot.send_message(bf, username)
         await asyncio.sleep(1)
         isdone = (await ayra_bot.get_messages(bf, limit=1))[0].text
@@ -250,8 +250,8 @@ async def autopilot():
         try:
             r = await ayra_bot(
                 CreateChannelRequest(
-                    title="Key-Userbot Logs",
-                    about="Ini adalah grup logs dari Key-Userbot\nJangan keluar dari grup logs ini\n\n",
+                    title="Fake-Ubot Logs",
+                    about="Ini adalah grup logs dari Fake-Ubot\nJangan keluar dari grup logs ini\n\n",
                     megagroup=True,
                 ),
             )
@@ -385,7 +385,7 @@ async def customize():
         await asyncio.sleep(1)
         await ayra_bot.send_message(
             "botfather",
-            f"✨ Powerful Key-Userbot Assistant  ✨\n✨ Master ~ {sir} ✨\n\n✨ Powered By ~ @KynanSupport ✨",
+            f"✨ Powerful Fake-Ubot Assistant  ✨\n✨ Master ~ {sir} ✨\n\n✨ Powered By ~ @stayheresay ✨",
         )
         await asyncio.sleep(2)
         await msg.edit("Completed **Auto Customisation** at @BotFather.")
@@ -449,7 +449,7 @@ async def ready():
         BTTS = Button.inline("• Click to Start •", "initft_2")
         udB.set_key("INIT_DEPLOY", "Done")
     else:
-        MSG = f"**Key-Userbot has been deployed!**\n╼┅━━━━━━━━━━━┅╾\n**UserMode**: {inline_mention(ayra_bot.me)}\n**Assistant**: @{asst.me.username}\n╼┅━━━━━━━━━━━┅╾\n**Support**: @KynanSupport\n╼┅━━━━━━━━━━━┅╾"
+        MSG = f"**Fake-Ubot has been deployed!**\n╼┅━━━━━━━━━━━┅╾\n**UserMode**: {inline_mention(ayra_bot.me)}\n**Assistant**: @{asst.me.username}\n╼┅━━━━━━━━━━━┅╾\n**Support**: @stayheresay\n╼┅━━━━━━━━━━━┅╾"
         BTTS, PHOTO = None, None
         prev_spam = udB.get_key("LAST_UPDATE_LOG_SPAM")
         if prev_spam:
