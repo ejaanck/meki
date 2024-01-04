@@ -41,8 +41,8 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/jonesroot/Key-Userbot"),
-        Button.url("• Support •", url="t.me/keysupport1"),
+        Button.url("• Repo •", url="https://github.com/ejaanck/meki"),
+        Button.url("• Support •", url="t.me/stayheresay"),
     ],
 ]
 
@@ -146,7 +146,7 @@ async def uptd_plugin(event):
                 help_ += "\n"
     if not help_:
         help_ = f"{file} has no Detailed Help!"
-    help_ += "\n© @Pusingeaak"
+    help_ += "\n© Fake Ubot"
     data = f"uh_{key}_"
     if index is not None:
         data += f"|{index}"
@@ -329,7 +329,7 @@ async def ibuild(e):
                             _pic,
                             title="Ayra Op",
                             text=txt,
-                            description="@Riizzvbss",
+                            description="@stayheresay",
                             buttons=btn,
                             link_preview=False,
                         )
@@ -345,7 +345,7 @@ async def ibuild(e):
                         title="Ayra Op",
                         type=_type,
                         text=txt,
-                        description="@Riizzvbss",
+                        description="@stayheresay",
                         include_media=include_media,
                         buttons=btn,
                         thumb=cont,
