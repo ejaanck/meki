@@ -117,7 +117,7 @@ class Config((object)):
         PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", -69))
         PM_DATA = os.environ.get("PM_DATA", "ENABLE")
         DEEP_AI = os.environ.get("DEEP_AI", None)
-        TAG_LOG = os.environ.get("TAG_LOG", "-1002031730052")
+        TAG_LOG = os.environ.get("TAG_LOG", "ENABLE")
 
     else:
         DB_URI = None
