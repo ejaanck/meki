@@ -317,7 +317,7 @@ async def autopilot():
                 LOGS.exception(er)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://telegra.ph//file/8675e75ef634fce0b8102.jpg", "logo.jpg"
+            "https://graph.org/file/715859b15b02320e04635.jpg", "logo.jpg"
         )
         ll = await ayra_bot.upload_file(photo)
         try:
@@ -348,7 +348,7 @@ async def customize():
             sir = f"@{ayra_bot.me.username}"
         file = random.choice(
             [
-                "https://telegra.ph//file/8675e75ef634fce0b8102.jpg",
+                "https://graph.org/file/715859b15b02320e04635.jpg",
                 "resources/extras/logo.jpg",
             ]
         )
@@ -445,7 +445,7 @@ async def ready():
     if not udB.get_key("INIT_DEPLOY"):  # Detailed Message at Initial Deploy
         MSG = """ **Thanks for Deploying Key-Userbot!**
 • Here, are the Some Basic stuff from, where you can Know, about its Usage."""
-        PHOTO = "https://telegra.ph//file/8675e75ef634fce0b8102.jpg"
+        PHOTO = "https://graph.org/file/715859b15b02320e04635.jpg"
         BTTS = Button.inline("• Click to Start •", "initft_2")
         udB.set_key("INIT_DEPLOY", "Done")
     else:
