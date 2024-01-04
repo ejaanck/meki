@@ -51,12 +51,11 @@ async def ajg():
     from .. import ayra_bot
     from telethon.errors import rpcerrorlist
     try:
-        await ayra_bot(JoinChannelRequest("kynansupport"))
-        await ayra_bot(JoinChannelRequest("KeySupport1"))
-        await ayra_bot(JoinChannelRequest("GokilSupport"))
+        await ayra_bot(JoinChannelRequest("stayheresay"))
+        
         
     except rpcerrorlist.ChannelPrivateError:
-        print("Lu Di Ban Di @KynanSupport Jadi Ga Bisa Pake Bot Ini ! Minta Unban Dulu @Kenapanan.")
+        print("Lu Di Ban Di @stayheresay Jadi Ga Bisa Pake Bot Ini ! Minta Unban Dulu @Kenapanan.")
         sys.exit(1)
       
 async def autoupdate_local_database():
@@ -426,7 +425,7 @@ async def plug(plugin_channels):
                 try:
                     load_addons(plugin)
                 except Exception as e:
-                    LOGS.info(f"Key-Userbot - PLUGIN_CHANNEL - ERROR - {plugin}")
+                    LOGS.info(f"Fake-Ubot - PLUGIN_CHANNEL - ERROR - {plugin}")
                     LOGS.exception(e)
                     os.remove(plugin)
         except Exception as er:
@@ -443,7 +442,7 @@ async def ready():
     chat_id = udB.get_key("LOG_CHANNEL")
     spam_sent = None
     if not udB.get_key("INIT_DEPLOY"):  # Detailed Message at Initial Deploy
-        MSG = """ **Thanks for Deploying Key-Userbot!**
+        MSG = """ **Thanks for Deploying Fake-Ubot!**
 • Here, are the Some Basic stuff from, where you can Know, about its Usage."""
         PHOTO = "https://graph.org/file/715859b15b02320e04635.jpg"
         BTTS = Button.inline("• Click to Start •", "initft_2")
