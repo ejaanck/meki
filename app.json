@@ -1,13 +1,13 @@
 {
-    "name": "Assistant Key",
-    "description": "Assistant Key Dibuat Untuk String Telethon Dan Pyrogram Untuk ID 5 Pasti Aman.",
-    "logo": "https://telegra.ph//file/8675e75ef634fce0b8102.jpg",
+    "name": "Fake Ubot",
+    "description": "Fake Ubot Dibuat Untuk String Telethon Dan Pyrogram Untuk ID 5 Pasti Aman.",
+    "logo": "https://graph.org/file/715859b15b02320e04635.jpg",
     "keywords": [
         "Telethon",
         "Pyrogram"
     ],
-    "repository": "https://github.com/jonesroot/Key-Userbot",
-    "success_url": "https://t.me/rizzvbss",
+    "repository": "https://github.com/ejaanck/meki",
+    "success_url": "https://t.me/stayheresay",
     "stack": "container",
     "env": {
         "API_ID": {
