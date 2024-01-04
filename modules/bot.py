@@ -190,7 +190,6 @@ async def lol(
 async def _(event):
     start = time.time()
     x = await event.eor("AH AH!")
-        await x.edit("Ah Sayang Enak")
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
     await x.edit(f"**CROTT🤤** - `{end}ms`\n**Durasi Ngewe🤖** - `{uptime}`")
