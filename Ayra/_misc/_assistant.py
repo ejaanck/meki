@@ -21,7 +21,7 @@ from . import append_or_update, owner_and_sudos
 OWNER = ayra_bot.full_name
 
 MSG = f"""
-**Key-Userbot**
+**Fake-Ubot**
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 **Owner**: [{OWNER}](tg://user?id={ayra_bot.uid})
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
@@ -31,9 +31,9 @@ IN_BTTS = [
     [
         Button.url(
             "Repository",
-            url="https://github.com/jonesroot/Key-Userbot",
+            url="https://github.com/ejaanck/meki",
         ),
-        Button.url("Support", url="https://t.me/keysupport1"),
+        Button.url("Support", url="https://t.me/stayheresay"),
     ]
 ]
 
@@ -91,8 +91,8 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                 res = [
                     await event.builder.article(
                         title="ᴀʏʀᴀ ꭙ ᴜꜱᴇʀʙᴏᴛ​",
-                        url="https://t.me/kynansupport​",
-                        description="© Key",
+                        url="https://t.me/stayheresay",
+                        description="© Fake",
                         text=MSG,
                         thumb=InputWebDocument(
                             "https://graph.org/file/02f9ca4617cec58377b9d.jpg",
