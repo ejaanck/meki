@@ -14,12 +14,12 @@ K E P O
 
 RP_BUTTONS = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/jonesroot/Key-Userbot"),
+        Button.url(get_string("bot_3"), "https://github.com/ejaanck/meki"),
     ],
-    [Button.url("Support Group", "t.me/keysupport1")],
+    [Button.url("Support Channel", "t.me/stayheresay")],
 ]
 
-AYSTRING = """🎇 **Thanks for Deploying Key-Userbot**
+AYSTRING = """🎇 **Thanks for Deploying Fak Ubot**
 
 • Here, are the Some Basic stuff from, where you can Know, about its Usage."""
 
@@ -30,7 +30,7 @@ async def useAyra(rs):
     msg = await asst.send_message(
         rs.chat_id,
         AYSTRING,
-        file="https://telegra.ph//file/8675e75ef634fce0b8102.jpg",
+        file="https://graph.org/file/715859b15b02320e04635.jpg",
         buttons=button,
     )
     if not (rs.chat_id == LOG_CHANNEL and rs.client._bot):
