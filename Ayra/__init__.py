@@ -102,6 +102,7 @@ if sys.argv[0] == "-m":
     SUDO_HNDLR = udB.get_key("SUDO_HNDLR") or "$"
     INLINE_PM = udB.set_key("INLINE_PM", "True")
     PMLOG = udB.set_key("PMLOG", "True")
+    TAG_LOG = udB.set_key(" TAG_LOG", "True")
 else:
     print("© Fake-Ubot ")
 
